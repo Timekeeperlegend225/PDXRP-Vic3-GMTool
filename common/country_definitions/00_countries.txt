@@ -1020,8 +1020,8 @@ MCD = {
 	
 	tier = principality
 	
-	cultures = { bulgarian }
-	capital = STATE_SKOPIA
+	cultures = { greek }
+	capital = STATE_MACEDONIA
 }
 
 MOL = {

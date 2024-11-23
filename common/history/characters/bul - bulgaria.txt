@@ -1,18 +1,19 @@
 ﻿CHARACTERS = {
-	c:MCD ?= {
+	c:BUL ?= {
 		create_character = {
-			# Basileus Georgios Zariphis
-			first_name = "Georgios"
-			last_name = "Zariphis"
+			# Konstantin Kolev
+			first_name = "Konstantin"
+			last_name = "Kolev"
 			historical = yes
 			culture = primary_culture
 			ruler = yes
-			age = 45
+			age = 46
 			interest_group = ig_landowners
-			ideology = ideology_market_liberal
+			ideology = ideology_traditionalist
 			traits = {
-				master_bureaucrat
-				erudite
+				pious
+				imperious
+				basic_political_operator
 				political_appointee
 			}
 			on_created = {
