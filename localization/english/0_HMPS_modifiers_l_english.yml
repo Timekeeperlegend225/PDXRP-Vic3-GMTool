@@ -69,6 +69,7 @@
  gm_socialism:0 "Socialist Unrest"
  
  gm_authority:0 "GM Action: +10% Authority"
+ gm_neg_authority:0 "GM Action: -10% Authority"
  
  gm_tuesday_a:0 "Black Tuesday"
  gm_tuesday_b:0 "Black Tuesday"

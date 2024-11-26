@@ -23,6 +23,7 @@
  gm_actions.1.s:0 "Black Tuesday"
  gm_actions.1.t:0 "Black Tuesday Recovery"
  gm_actions.1.u:0 "Flu Epidemic"
+ gm_actions.1.v:0 "Innovation Fix"
  
  gm_actions.20.a:0 "Change Prestige"
  gm_actions.20.b:0 "Decide if you want negative or positive Prestige changes."
@@ -114,7 +115,8 @@
  gm_actions.34.b:0 "Cancel"
  gm_actions.34.c:0 "Add Influence"
  gm_actions.34.d:0 "Add Authority"
- gm_actions.34.e:0 "Remove Both"
+ gm_actions.34.e:0 "Remove All"
+ gm_actions.34.f:0 "Lower Authority"
  
  gm_actions.35.a:0 "Change Socialist Unrest"
  gm_actions.35.b:0 "Cancel"
@@ -157,6 +159,10 @@
  gm_actions.38.c:0 "Remove all Modifiers"
  gm_actions.38.d:0 "Add Local Flu Epidemic"
  gm_actions.38.e:0 "Add Army Debuff"
+ 
+ gm_actions.39.a:0 "Innovation Fix
+ gm_actions.39.b:0 "Cancel"
+ gm_actions.39.c:0 "Add Innovation Fix"
 
  
  ###Infamy

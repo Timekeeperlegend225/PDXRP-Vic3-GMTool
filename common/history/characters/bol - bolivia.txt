@@ -1,0 +1,52 @@
+﻿CHARACTERS = {
+	c:BOL ?= {
+		create_character = {
+			template = BOL_Andres_de_Santa_Cruz
+		}
+
+		### Interest Group leaders
+		# Landowners
+		create_character = {
+			template = BOL_Mariano_Enrique_Calvo
+		}
+
+		# Petty Bourgeoisie
+		create_character = {
+			template = BOL_Casimiro_Olaneta
+		}
+
+		# Armed Forces
+		create_character = {
+			template = BOL_Jose_Miguel_de_Velasco
+		}
+
+		### Military
+		# Land
+		create_character = {
+			template = BOL_Jose_Ballivian
+		}
+		create_character = {
+			template = BOL_Francisco_Burdett_O_Connor
+		}
+		
+		### Agitators ###
+		create_character  = {
+			first_name = Juan
+			last_name = Lavalle
+			historical = yes
+			birth_date = 1797.10.17
+			is_agitator = yes 
+			interest_group = ig_landowners
+			female = no
+			ideology = ideology_authoritarian
+			culture = cu:platinean
+			religion = rel:catholic
+			traits = {	
+				imposing
+				honorable
+				popular_commander
+			}
+			trait_generation = { }
+		}
+	}
+}

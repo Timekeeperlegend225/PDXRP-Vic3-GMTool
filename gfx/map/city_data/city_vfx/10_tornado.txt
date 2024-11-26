@@ -1,0 +1,9 @@
+﻿# tornado_warning = {
+#	visible = {
+#	   state_region = {
+#				has_harvest_condition = tornadoes
+#				}
+#	}
+#	
+#	entity = "env_dust_devil"
+# }

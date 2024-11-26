@@ -1,0 +1,9 @@
+﻿volcanic_ash = {
+	visible = {
+	   state_region = {
+				has_harvest_condition = volcanic_eruption
+				}
+	}
+	
+	entity = "pollution_stage_3"
+}

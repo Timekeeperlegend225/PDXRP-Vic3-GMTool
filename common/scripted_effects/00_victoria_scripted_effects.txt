@@ -397,7 +397,7 @@ adopt_random_antigovernment_ideology = {
 		random_list = { 
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = socialism
 						NOT = {
 							ruler = {
@@ -409,7 +409,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_council_republic
 							}
 						}
@@ -420,7 +420,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			100 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = socialism
 						NOT = {
 							ruler = {
@@ -435,7 +435,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -443,7 +443,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_autocracy
 							}
 						}
@@ -451,7 +451,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							this.interest_group = {
+							scope:relevant_ig = {
 								is_interest_group_type = ig_trade_unions
 							}
 						}
@@ -475,7 +475,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			100 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = political_agitation
 						NOT = {
 							ruler = {
@@ -490,7 +490,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -498,7 +498,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_autocracy
 							}
 						}
@@ -506,7 +506,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							this.interest_group = {
+							scope:relevant_ig = {
 								is_interest_group_type = ig_trade_unions
 							}
 						}
@@ -530,7 +530,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			100 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = anarchism
 						NOT = {
 							ruler = {
@@ -542,7 +542,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -550,7 +550,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_autocracy
 							}
 						}
@@ -558,7 +558,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							this.interest_group = {
+							scope:relevant_ig = {
 								OR = {
 									is_interest_group_type = ig_trade_unions
 									is_interest_group_type = ig_rural_folk
@@ -585,7 +585,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			100 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = political_agitation
 						NOT = {
 							ruler = {
@@ -638,7 +638,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_no_migration_controls
 							}
 						}
@@ -646,7 +646,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_multicultural
 							}
 						}
@@ -656,7 +656,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_cultural_exclusion
 							}
 						}
@@ -666,7 +666,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_council_republic
 							}
 						}
@@ -679,7 +679,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = realism
 						has_law = law_type:law_state_religion
 						NOT = {
@@ -692,7 +692,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -700,7 +700,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_state_religion
 							}
 						}
@@ -708,7 +708,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_theocracy
 							}
 						}
@@ -719,7 +719,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = egalitarianism
 						NOT = {
 							ruler = {
@@ -731,7 +731,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {	
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -739,7 +739,7 @@ adopt_random_antigovernment_ideology = {
 					}	
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_autocracy
 							}
 						}
@@ -747,7 +747,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_oligarchy
 							}
 						}
@@ -755,7 +755,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_landed_voting
 							}
 						}
@@ -766,7 +766,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			100 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = mass_propaganda
 						NOT = {
 							ruler = {
@@ -820,7 +820,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_council_republic
 							}
 						}
@@ -833,7 +833,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = stock_exchange
 						NOT = {
 							ruler = {
@@ -845,7 +845,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_command_economy
 							}
 						}
@@ -853,7 +853,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_traditionalism
 							}
 						}
@@ -861,7 +861,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_isolationism
 							}
 						}
@@ -884,7 +884,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = romanticism
 						OR = {
 							has_law = law_type:law_command_economy
@@ -901,7 +901,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								any_scope_state = {
 									any_scope_building = {
 										is_building_group = bg_heavy_industry
@@ -915,7 +915,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								any_scope_building = {
 									is_building_group = bg_heavy_industry
 									level >= 5
@@ -944,7 +944,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_ruling_interest_group = ig_industrialists
 							}
 						}
@@ -954,7 +954,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_ruling_interest_group = ig_rural_folk
 							}
 						}
@@ -967,7 +967,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = feminism
 						NOT = {
 							ruler = {
@@ -979,7 +979,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -990,7 +990,7 @@ adopt_random_antigovernment_ideology = {
 			}
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_technology_researched = feminism
 						NOT = {
 							ruler = {
@@ -1005,7 +1005,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -1026,7 +1026,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							this.interest_group ?= {
+							scope:relevant_ig ?= {
 								OR = {
 									is_interest_group_type = ig_landowners
 									is_interest_group_type = ig_devout
@@ -1080,7 +1080,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							this.interest_group ?= {
+							scope:relevant_ig ?= {
 								OR = {
 									is_interest_group_type = ig_intelligentsia
 									is_interest_group_type = ig_industrialists
@@ -1103,14 +1103,14 @@ adopt_random_antigovernment_ideology = {
 							has_ideology = ideology:ideology_republican_leader	
 						}
 					}
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						has_law = law_type:law_monarchy
 					}
 				}
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_monarchy
 							}
 						}
@@ -1120,7 +1120,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_autocracy
 							}
 						}
@@ -1130,7 +1130,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_oligarchy
 							}
 						}
@@ -1138,7 +1138,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_landed_voting
 							}
 						}
@@ -1146,7 +1146,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							this.interest_group = {
+							scope:relevant_ig = {
 								is_interest_group_type = ig_landowners
 							}
 						}
@@ -1160,7 +1160,7 @@ adopt_random_antigovernment_ideology = {
 
 			50 = {
 				trigger = {
-					owner ?= {
+					scope:exiling_country_scope ?= {
 						NOT = {
 							ruler = {
 								has_ideology = ideology:ideology_abolitionist	
@@ -1177,7 +1177,7 @@ adopt_random_antigovernment_ideology = {
 				modifier = {
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_serfdom
 							}
 						}
@@ -1185,7 +1185,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								NOT = {
 									has_law = law_type:law_slavery_banned
 								}
@@ -1195,7 +1195,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							owner = {
+							scope:exiling_country_scope = {
 								has_law = law_type:law_slave_trade
 							}
 						}
@@ -1203,7 +1203,7 @@ adopt_random_antigovernment_ideology = {
 					}
 					if = {
 						limit = {
-							this.interest_group = {
+							scope:relevant_ig = {
 								is_interest_group_type = ig_landowners
 							}
 						}

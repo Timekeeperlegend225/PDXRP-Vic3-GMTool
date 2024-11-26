@@ -221,6 +221,11 @@ gm_authority = {
 	country_authority_mult = 0.1
 }
 
+gm_neg_authority = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_authority_mult = -0.1
+}
+
 gm_tuesday_a = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
 	country_minting_mult= 0.05

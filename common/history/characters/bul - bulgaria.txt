@@ -1,0 +1,24 @@
+﻿CHARACTERS = {
+	c:BUL ?= {
+		create_character = {
+			# Konstantin Kolev
+			first_name = "Konstantin"
+			last_name = "Kolev"
+			historical = yes
+			culture = primary_culture
+			ruler = yes
+			age = 46
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+				imperious
+				basic_political_operator
+				political_appointee
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+	}
+}

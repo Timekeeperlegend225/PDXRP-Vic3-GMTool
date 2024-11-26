@@ -254,7 +254,11 @@
 		create_diplomatic_pact = {
 			country = c:TRI
 			type = puppet
-		}	
+		}
+		create_diplomatic_pact = {
+			country = c:TRI
+			type = exempt_from_service
+		}
 		create_diplomatic_pact = {
 			country = c:MCD
 			type = puppet

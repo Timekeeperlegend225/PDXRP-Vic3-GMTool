@@ -72,7 +72,7 @@
 	}
 
 	pact = {
-		cost = 50
+		cost = 0
 		is_two_sided_pact = yes
 		is_foreign_investment_rights = yes
 

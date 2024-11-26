@@ -24,11 +24,12 @@ gbr_william_hanover_template = {
     }
 }
 gbr_ernest_hannover_template = {
-	first_name =  Charles_Augustus
+	first_name =  Charles
 	last_name = Hannover
 	historical = yes
 	heir = yes
 	noble = yes
+	culture = cu:british
 	birth_date = 1771.6.5
 	interest_group = ig_landowners
 	ideology = ideology_authoritarian

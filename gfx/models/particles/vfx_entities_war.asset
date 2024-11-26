@@ -1,0 +1,42 @@
+entity = {
+	name = "vfx_entity_campfire"
+	pdxmesh = "cube_test_mesh"
+	
+	scale = 1
+	
+	locator = { name = "root" position = { 0 0 0 } }
+	
+	get_state_from_parent = no
+	
+	default_state = "idle"
+
+	state = 
+	{ 
+		name = "idle" 
+		state_time = 10
+		looping = yes 
+	
+		event = { time = 0 node = "root" particle = "particle_campfire" trigger_once = yes keep_particle = yes}	
+	}
+}
+
+entity = {
+	name = "vfx_entity_warunits_chimneysmoke"
+	
+	scale = 1
+	
+	locator = { name = "root" position = { 0 0 0 } }
+	
+	default_state = "idle"
+
+	state = 
+	{ 
+		name = "idle" 
+		state_time = 10
+		looping = yes 
+	
+		event = { time = 0 node = "root" particle = "particle_warunits_chimneysmoke" trigger_once = yes keep_particle = yes }	
+	}
+
+}
+

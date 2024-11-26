@@ -1,0 +1,103 @@
+﻿# Natural Disaster Triggers
+
+is_vulnerable_to_tornadoes = {
+		NOT = {
+			region = sr:region_west_siberia
+			region = sr:region_east_siberia
+			region = sr:region_himalayas
+			region = sr:region_pacific_coast
+			region = sr:region_north_sea_coast
+			region = sr:region_baltic
+			region = sr:region_finland
+			region = sr:region_arctic_russia
+			region = sr:region_urals
+			region = sr:region_baltic_states
+		}
+	}
+
+tornado_alley = {
+			OR = {
+				region = sr:region_dixie
+				region = sr:region_great_plains
+				region = sr:region_the_midwest
+			}
+	}
+
+is_vulnerable_to_cyclones = {
+		OR = {
+				region = sr:region_oceania
+				region = sr:region_dixie
+				region = sr:region_caribbean
+				region = sr:region_central_america
+				region = sr:region_indonesia
+				region = sr:region_japan
+			}
+	}
+
+is_vulnerable_to_earthquakes = {
+	OR = {
+		region = sr:region_ethiopia
+		region = sr:region_oceania
+		region = sr:region_anatolia
+		region = sr:region_arabic
+		region = sr:region_persia
+		region = sr:region_caucasus
+		region = sr:region_mexico
+		region = sr:region_la_plata
+		region = sr:region_pacific_coast
+		region = sr:region_central_america
+		region = sr:region_indonesia
+		region = sr:region_japan
+		region = sr:region_himalayas
+	}
+}
+
+ring_of_fire = {
+	OR = {
+		region = sr:region_oceania
+		region = sr:region_mexico
+		region = sr:region_la_plata
+		region = sr:region_pacific_coast
+		region = sr:region_central_america
+		region = sr:region_indonesia
+		region = sr:region_japan
+	}
+}
+
+is_vulnerable_to_volcano = {
+	OR = { 
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_ICELAND
+				state_region = s:STATE_SICILY
+				state_region = s:STATE_WYOMING
+			}
+		}
+	OR = {
+		region = sr:region_oceania
+		region = sr:region_mexico
+		region = sr:region_la_plata
+		region = sr:region_pacific_coast
+		region = sr:region_central_america
+		region = sr:region_indonesia
+		region = sr:region_japan
+		}
+	}
+}
+is_vulnerable_to_hurricanes = {
+	OR = {
+		region = sr:region_oceania
+		region = sr:region_indonesia
+		region = sr:region_japan
+		region = sr:region_caribbean
+		region = sr:region_central_america 
+		region = sr:region_dixie
+		}
+}
+
+is_vulnerable_to_nor_easter = {
+	OR = {
+		region = sr:region_canada
+		region = sr:region_russia
+		}
+}

@@ -151,8 +151,13 @@
 			target = c:GBR
 			add_interest_group = ig:ig_armed_forces
 			add_interest_group = ig:ig_landowners
+		}
+		create_political_lobby = {
+			type = lobby_anti_overlord
+			target = c:GBR
 			add_interest_group = ig:ig_intelligentsia
-		}	
+			add_interest_group = ig:ig_industrialists
+		}
 	}
 	
 	c:HAW = {
@@ -380,8 +385,13 @@
 			target = c:RUS
 			add_interest_group = ig:ig_devout
 			add_interest_group = ig:ig_armed_forces
+			add_interest_group = ig:ig_intelligentsia
+		}
+		create_political_lobby = {
+			type = lobby_pro_overlord
+			target = c:TUR
 			add_interest_group = ig:ig_landowners
-		}	
+		}
 	}
 	
 	c:SPA = {
@@ -464,7 +474,12 @@
 			type = lobby_pro_country  
 			target = c:FRA
 			add_interest_group = ig:ig_intelligentsia
-		}	
+		}
+		create_political_lobby = {
+			type = lobby_pro_overlord
+			target = c:TUR
+			add_interest_group = ig:ig_landowners
+		}
 	}
 
 	c:KAB = {

@@ -1,0 +1,241 @@
+﻿# Negative
+tornadoes = {
+
+	incompatible_with = drought
+	incompatible_with = wildfire
+	incompatible_with = frost
+	
+	trigger = {
+		tornado_alley = yes
+	}
+
+	
+	range = {
+		integer_range = {
+			min = 1
+			max = 2 
+		}
+	}
+
+	duration = {
+		fixed_range = {
+			min = 4
+			max = 36
+		}
+	}
+
+	modifier = {
+		#Throughput
+		building_group_bg_agriculture_throughput_add = -0.05
+		building_group_bg_plantations_throughput_add = -0.05
+		building_group_bg_ranching_throughput_add = -0.05
+
+		#Infrastructure
+		state_infrastructure_mult = -0.03
+		
+		#Deaths
+		state_mortality_mult = 0.01
+
+		#Subsistence
+		state_peasants_consumption_multiplier_add= 0.02
+	}
+
+	intensity = {
+		fixed_range = {
+			min = 1
+			max = 5
+		}
+	}
+
+	chance = {
+		value = 0.025
+		if = {
+			limit = {
+				has_harvest_condition = hailstorm
+			}
+			multiply = 1.4
+		}
+		if = {
+			limit = {
+				has_harvest_condition = extreme_winds
+			}
+			multiply = 1.1
+		}
+	}
+
+	color = { 42 72 200 }
+	icon = "gfx/interface/icons/harvest_condition_icons/tornadoes.dds"
+	graphics = extreme_winds
+	incompatible_terrain = { desert }
+	map_texture = "gfx/map/map_painting/harvest_conditions_map_patterns/harvest_conditions_bad.dds"
+}
+
+earthquake = {
+	trigger = {
+		is_vulnerable_to_earthquakes = yes
+	}
+
+	range = {
+		integer_range = {
+			min = 1
+			max = 1
+		}
+	}
+
+	duration = {
+		fixed_range = {
+			min = 12
+			max = 56
+		}
+	}
+
+	modifier = {
+		#Infrastructure
+		state_infrastructure_mult = -0.05
+
+		#MAPI
+		state_market_access_price_impact = -0.05
+
+		#Throughput
+		building_group_bg_agriculture_throughput_add = -0.01
+		building_group_bg_plantations_throughput_add = -0.01
+		building_group_bg_ranching_throughput_add = -0.01
+		building_group_bg_extraction_throughput_add = -0.01
+
+		#Deaths
+		state_mortality_mult = 0.08
+		
+		#Subsistence
+		state_peasants_consumption_multiplier_add = 0.025
+	}
+
+	intensity = {
+		fixed_range = {
+			min = 1
+			max = 10
+		}
+	}
+
+	chance = {
+		value = 0.0008
+		if = {
+			limit = {
+				OR = {
+					ring_of_fire = yes
+				}
+			}
+			multiply = 3.5
+		}
+	}
+
+	color = { 214 50 42 }
+	icon = "gfx/interface/icons/harvest_condition_icons/earthquake.dds"
+	graphics = drought
+	map_texture = "gfx/map/map_painting/harvest_conditions_map_patterns/harvest_conditions_bad.dds"
+}
+
+volcanic_eruption = {
+	trigger = {
+		is_vulnerable_to_volcano = yes
+	}
+
+	incompatible_with = torrential_rains
+	incompatible_with = flood
+
+	range = {
+		integer_range = {
+			min = 1
+			max = 3
+		}
+	}
+
+	duration = {
+		fixed_range = {
+			min = 24
+			max = 104
+		}
+	}
+
+	modifier = {
+		#Infrastructure
+		state_infrastructure_mult = -0.05
+		
+		#Throughput
+		building_group_bg_agriculture_throughput_add = -0.08
+		building_group_bg_plantations_throughput_add = -0.08
+
+		#Deaths
+		state_mortality_mult = 0.03
+		
+		#Subsistence
+		state_peasants_consumption_multiplier_add= 0.03
+	}
+
+	intensity = {
+		fixed_range = {
+			min = 1
+			max = 7
+		}
+	}
+
+	chance = {
+		value = 0.004
+	}
+
+	color = { 0 0 0 }
+	icon = "gfx/interface/icons/harvest_condition_icons/volcano.dds"
+	graphics = wildfire
+	map_texture = "gfx/map/map_painting/harvest_conditions_map_patterns/harvest_conditions_bad.dds"
+}
+
+tropical_storm = {
+	trigger = {
+		is_vulnerable_to_hurricanes = yes
+	}
+
+	incompatible_with = drought
+	incompatible_with = wildfire
+	incompatible_with = heatwave
+	incompatible_with = optimal_sunlight
+	incompatible_with = moderate_rainfall
+	
+	# Incompatible with Extreme Winds: pollinators, locusts
+	# Replaces pollinators, locusts
+
+	range = {
+		integer_range = {
+			min = 1
+			max = 2
+		}
+	}
+
+	duration = {
+		fixed_range = {
+			min = 24
+			max = 62
+		}
+	}
+
+	modifier = {
+		# Throughput
+		state_infrastructure_mult = -0.08
+		building_group_bg_agriculture_throughput_add = -0.05
+		building_group_bg_plantations_throughput_add = -0.05
+	}
+
+	intensity = {
+		fixed_range = {
+			min = 1
+			max = 5
+		}
+	}
+
+	chance = {
+		value = 0.0016
+	}
+
+	color = { 79 204 169 }
+	icon = "gfx/interface/icons/harvest_condition_icons/cyclone.dds"
+	map_texture = "gfx/map/map_painting/harvest_conditions_map_patterns/harvest_conditions_bad.dds"
+	graphics = torrential_rains
+}

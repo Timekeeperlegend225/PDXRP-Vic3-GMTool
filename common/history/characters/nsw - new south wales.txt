@@ -1,0 +1,52 @@
+﻿CHARACTERS = {
+	c:NSW ?= {
+		create_character = {
+			template = AST_richard_bourke
+		}	
+
+		create_character = {
+			template = AST_william_wentworth
+		}
+		
+		create_character = {
+			template = AST_samuel_marsden
+		}
+		
+		create_character = {
+			template = AST_john_plunkett
+		}
+		
+		create_character = {
+			template = AST_william_bland
+		}
+		
+		create_character = {
+			template = AST_alexander_berry
+		}
+		
+		create_character = {
+			template = AST_richard_jones
+		}
+		if = {
+			limit = {
+				has_dlc_feature = voice_of_the_people_content
+			}
+			create_character = {
+				first_name = Jacob
+				last_name = Grimm
+				historical = yes
+				culture = cu:north_german
+				birth_date = 1785.1.4
+				is_agitator = yes 
+				interest_group = ig_intelligentsia
+				female = no
+				ideology = ideology_radical
+				dna = dna_grimm_jacob
+				traits = {	
+					meticulous
+					tactful
+				}
+			}
+		}
+    }
+}

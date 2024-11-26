@@ -1,0 +1,9 @@
+﻿storm_surge = {
+	visible = {
+	   state_region = {
+				has_harvest_condition = tropical_storm
+				}
+	}
+	
+	entity = "env_snow_01"
+}

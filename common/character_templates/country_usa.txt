@@ -53,7 +53,7 @@ usa_Van_Buren_template = {
     interest_group = ig_rural_folk
     birth_date = 1782.12.5
 	dna = ecchi_dna_martin_van_buren
-    traits = { cautious basic_diplomat }
+    traits = { cautious basic_diplomat reserved }
     ruler = yes
     ig_leader = yes
 }

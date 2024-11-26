@@ -96,6 +96,8 @@ POLITICAL_MOVEMENTS = {
 	}
 	c:TUR ?= {
 		create_political_movement = { type = movement_modernizer }
+		create_political_movement = { type = movement_royalist_constitutional }
+		create_political_movement = { type = movement_royalist_absolutist }
 	}
 	c:SIA ?= {
 		create_political_movement = { type = movement_modernizer }
@@ -108,5 +110,8 @@ POLITICAL_MOVEMENTS = {
 	}
 	c:GBR ?= {
 		create_political_movement = { type = movement_royalist_absolutist }
+	}
+	c:HAN ?= {
+		create_political_movement = { type = movement_radical }
 	}
 }
